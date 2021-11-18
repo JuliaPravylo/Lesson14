@@ -1,0 +1,184 @@
+/* Підключення  шрифтів */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Lobster&family=Poppins:wght@400;700&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+    /* overflow-x: hidden; */
+}
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden; */
+	/* padding: 20px; */
+}
+/* Убираем лишний отступ. Вариант №1 */
+/*
+.text *:last-child {
+	margin-bottom: 0;
+}
+*/
+/* Убираем лишний отступ. Вариант №2 
+ для любых объектов внутри объектов с классом .text
+ добавить внешний отступ 20px вниз, 
+ но кроме последнего объекта
+
+.text *:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}*/
+/* ------------------------------ */
+body {
+    font-family: "Roboto";
+}
+header {
+    height: 100px;
+}
+/* Обмежуючий контейнер */
+._container{
+    max-width: 1020px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.impact{
+    padding: 110px 0 0 0;
+    background: url("../img/ourimpact/blob.png") 80% 0 no-repeat #29C3BE;
+    margin-bottom: 100px;
+}
+.impact__topblock{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.headers{
+    max-width: 411px;
+    color: #FFFFFF;
+}
+.headers__title{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2.5px;
+    padding: 2px 0 0 33px;
+    margin: 0 0 32px 0;
+    background: url("../img/ourimpact/overline_mark.svg") 0 0 no-repeat;
+}
+.headers__subtitle{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+}
+.image__dog{
+    border-radius: 40px;
+    margin-top: -170px;
+    overflow: hidden;
+}
+.impact__items{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 0 100px 0;
+}
+.impact-item__img{
+    margin-right: 11px;
+}
+.impact-item__number{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.impact-item__text{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #5D62B5;
+}
+.impact-item{
+    display: flex;
+    flex: 0 0 25%;
+}
+/* -------- */
+.promice{
+    padding: 0 0 100px 0;
+}
+.promice__title{
+    font-weight: bold;
+font-size: 12px;
+line-height: 24px;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+padding: 2px 0 0 33px;
+margin: 0 0 33px 0;
+color: #5D62B5;
+background: url("../img/ourpromise/overline_mark.svg") 0 0 no-repeat;
+}
+.promice__subtitle{
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    margin: 0 0 70px 0;
+    color: #000000;
+}
+.promice__items{
+    display: flex;
+    justify-content: space-around;
+}
+.promice__item{
+    display: flex;
+    flex: 0 0 33.33%;
+    align-items: flex-start;
+}
+.item__title{
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+    color: #F2726F;
+}
+.item__text{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #4B4B4B;
+}
+.item__image{
+    margin-right: 24px;
+}
